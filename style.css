@@ -1,0 +1,86 @@
+body {
+  width: infinity rem;
+  height: infinity rem;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #6078ea;
+}
+
+.navbar {
+  display: flex;
+  height: 6rem;
+  color: aliceblue;
+  padding: 0 10%;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  height: 45rem;
+  padding: 0 10%;
+}
+
+.hero-container > div {
+  width: 50%;
+  color: aliceblue;
+  margin-top: 50px;
+}
+
+.hero-container h2 {
+  width: 55rem;
+  font-size: 2rem;
+  font-weight: 500;
+  height: 3rem;
+  line-height: 3.3rem;
+  margin-bottom: 10px;
+}
+
+.hero-container P {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+  color: aliceblue;
+  margin-top: 0;
+}
+
+.form button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.button .hero-container > img {
+  width: 50%;
+  height: 43rem;
+  align-self: center;
+}
+
+.hero-container h3 {
+  position: absolute;
+  width: 11.8rem;
+  margin: 0 1rem;
+  border-radius: 1.8rem;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.form button {
+  width: 189px;
+  height: 63px;
+  font-size: 32px;
+  border-radius: 30px;
+  border: none;
+  color: aliceblue;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.form span {
+  margin: 0 45px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 500px) {
+}

@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.nav {
+  width: 1686px;
+  height: 100px;
+  line-height: 100px;
+  padding-left: 10%;
+  font-size: 20px;
+  font-weight: 800;
+  background: #6078ea;
+}
+
+.warga a {
+  color: #f9fffe;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(180deg, #6078ea 0%, #17ead9 80.04%);
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 70px;
+  user-select: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 22px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+ul li:hover a {
+  padding-left: 50px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #6078ea;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -500px;
+  top: 145px;
+  font-size: 30px;
+  color: #f9fffe;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+
+.content {
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: #f9fffe;
+  background: linear-gradient(321.67deg, #6078ea 55.09%, #17ead9 116.78%);
+  border-radius: 10px 10px 0 0;
+}
+.item {
+  width: 350px;
+  height: 30px;
+  background: #4e65d0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.link {
+  color: white;
+  margin-left: 290px;
+}
+
+.foto {
+  padding-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+input {
+  color: #f9fffe;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.masukan {
+  width: 400px;
+  height: 40px;
+  margin-left: 70px;
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.49);
+  border: none;
+  border-radius: 30px;
+}
+
+.font {
+  font-size: 30;
+  font-weight: 800;
+  color: #f9fffe;
+}
+
+.baris {
+  width: 800px;
+  height: 590px;
+  background: #6078ea;
+  border-radius: 10px;
+}
+
+.menu-right {
+  margin-left: 50px;
+}
+
+.submit {
+  width: 150px;
+  text-align: center;
+  margin-left: 450px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.18);
+  border-radius: 40px;
+}
+
+.warna {
+  background: linear-gradient(180deg, #6078ea 0%, #17ead9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

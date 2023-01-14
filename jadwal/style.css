@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 1703px;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  padding-left: 10%;
+  font-size: 20px;
+  font-weight: 800;
+  background: #6078ea;
+}
+
+.warga a {
+  color: #f9fffe;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(180deg, #6078ea 0%, #17ead9 80.04%);
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 70px;
+  user-select: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 22px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+ul li:hover a {
+  padding-left: 50px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #6078ea;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -500px;
+  top: 145px;
+  font-size: 30px;
+  color: #f9fffe;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+}
+
+.item-container {
+  margin-top: 10px;
+}
+
+.jadwal,
+.hari {
+  margin-top: 10px;
+}
+
+.warna {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  padding-left: 100px;
+  color: aliceblue;
+}
+
+.kegiatan {
+  width: 700px;
+  height: 100px;
+  margin-top: 50px;
+  font-weight: 800;
+  background: linear-gradient(302.68deg, #6078ea 60.82%, #17ead9 127.31%);
+  border-radius: 15px;
+  font-size: 28px;
+}
+
+.nama {
+  padding-left: 50px;
+  font-weight: 800;
+  font-size: 70px;
+  background: linear-gradient(266.49deg, #17ead9 21.14%, #6078ea 82.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}

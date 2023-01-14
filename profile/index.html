@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h2 class="warga"><a href="../home/index.html">iWarga</a></h2>
+    </nav>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa fa-bars" id="btn"></i>
+      <i class="fa fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="./index.html">Profile</a>
+        </li>
+        <li>
+          <a href="../warga/index.html">warga</a>
+        </li>
+        <li>
+          <a href="../layanan/index.html">Layanan</a>
+        </li>
+        <li>
+          <a href="../keuangan/index.html">Keuangan</a>
+        </li>
+        <li>
+          <a href="../jadwal/index.html">Jadwal</a>
+        </li>
+        <li>
+          <a href="../dokumentasi/index.html">Dokumentasi</a>
+        </li>
+        <li><a href="../index.html">Log out</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="main-menu">
+        <div class="menu-left">
+          <div class="bungkusan">
+            <h2>Your Profile</h2>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="menu-right">
+            <form action="#">
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td><input class="masukan" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>E-mail</td>
+                  <td><input class="masukan" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>NIK</td>
+                  <td><input class="masukan" type="number" /></td>
+                </tr>
+                <tr>
+                  <td>No. KK</td>
+                  <td><input class="masukan" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td><input class="masukan" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Jenis Kelamin</td>
+                  <td><input class="kelamin" type="radio" name="jk" />Laki-laki <input class="kelamin" type="radio" name="jk" />Perempuan</td>
+                </tr>
+                <tr>
+                  <td>Tempat/Tanggal Lahir</td>
+                  <td><input class="masukan" type="text" /></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div class="save-change">
+            <button class="tombol">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
